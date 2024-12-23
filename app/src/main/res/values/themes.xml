@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TextRecognitionOCRApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/DarkPrimaryColor</item>-->
+<!--        <item name="colorOnPrimary">@color/SecondaryColor</item>-->
+<!--        <item name="android:statusBarColor">@color/TertiaryColor</item>-->
+    </style>
+
+    <style name="Theme.TextRecognitionOCRApp" parent="Base.Theme.TextRecognitionOCRApp" />
+</resources>

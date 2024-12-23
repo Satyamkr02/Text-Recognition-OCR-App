@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cameraImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/iv_cameraImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/upload_image" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btn_captureImage"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/DarkPrimaryColor"
+        android:fontFamily="@font/sf_pro_medium"
+        android:text="Capture Image"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/cv_cameraImage"
+        app:layout_constraintStart_toStartOf="@+id/cv_cameraImage"
+        app:layout_constraintTop_toBottomOf="@+id/cv_cameraImage" />
+
+    <Button
+        android:id="@+id/btn_selectImage"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/light_sky_blue"
+        android:fontFamily="@font/sf_pro_medium"
+        android:text="Select Image"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_captureImage"
+        app:layout_constraintStart_toStartOf="@+id/btn_captureImage"
+        app:layout_constraintTop_toBottomOf="@+id/btn_captureImage" />
+
+
+    <TextView
+        android:id="@+id/tv_ocrText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/sf_pro_medium"
+        android:text="OCR Text :"
+        android:textColor="@color/DarkPrimaryColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_captureImage"
+        app:layout_constraintStart_toStartOf="@+id/btn_captureImage"
+        app:layout_constraintTop_toBottomOf="@+id/btn_selectImage" />
+
+
+    <TextView
+        android:id="@+id/tv_resultText"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/text_background"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/sf_pro"
+        android:hint="Result Text"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ocrText" />
+
+    <Button
+        android:id="@+id/btn_copyResultText"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/DarkPrimaryColor"
+        android:fontFamily="@font/sf_pro_medium"
+        android:text="Copy"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tv_resultText"
+        app:layout_constraintStart_toStartOf="@+id/tv_resultText"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resultText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

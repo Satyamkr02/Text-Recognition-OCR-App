@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name = "PrimaryColor">#9381ff</color>
+    <color name = "SecondaryColor">#b8b8ff</color>
+    <color name = "TertiaryColor">#f8f7ff</color>
+    <color name="light_sky_blue">#7fc8f8</color>
+
+    <color name="DarkPrimaryColor">#7A6EDD</color> <!-- Darker version of #9381FF -->
+    <color name="DarkSecondaryColor">#6A5ACD</color> <!-- Slightly darker shade of #B8B8FF -->
+    <color name="DarkTertiaryColor">#383850</color> <!-- Deep muted background shade -->
+    <color name="DarkBackgroundColor">#1E1E30</color> <!-- Very dark background for a modern look -->
+    <color name="DarkAccentColor">#A89EFF</color> <!-- Accent for subtle highlights -->
+    <color name="DarkTextColor">#F8F7FF</color> <!-- Light text color for readability -->
+
+</resources>
